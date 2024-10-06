@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pranjal Sharma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+
+    <script>
+        // Load the taskbar from taskbar.html
+        fetch('taskbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('taskbar-container').innerHTML = data;
+            });
+    </script>
+
+<div class="container">
+    <!-- Sidebar Section -->
+    <div id="taskbar-container"></div>
+
+    <div class="flexcontainer">
+
+
+        <div class="antartica">
+            <img src="photosimage-editing/antartica.jpeg" alt="antartica">
+            <p class="caption">Antartica</p>
+
+    
+        </div>
+
+        <hr>
+
+        <div class="antiraggingposter">
+            <img src="photosimage-editing/antiragging poster.jpeg" alt="anti-ragging poster">
+            <p class="caption">Anti-ragging poster</p>
+
+    
+        </div>
+
+        <hr>
+
+
+        <div class="farming">
+            <img src="photosimage-editing/Farming.jpeg" alt="Farming">
+            <p class="caption">Farming</p>
+
+    
+        </div>
+
+        <hr>
+
+        
+        <div class="frankestein">
+            <img src="photosimage-editing/frannkestein.jpeg" alt="frankestein">
+            <p class="caption">Frankestein</p>
+
+    
+        </div>
+
+        <hr>
+
+
+               
+        <div class="swarg">
+            <img src="photosimage-editing/swarg.jpeg" alt="swarg">
+            <p class="caption">Swarg</p>
+
+    
+        </div>
+
+        
+
+
+</div>
+
+
+</body>
+
+</html>

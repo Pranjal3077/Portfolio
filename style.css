@@ -1,0 +1,150 @@
+/* Base styles */
+* {
+    box-sizing: border-box; /* Ensure padding/border is included in width */
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+    padding: 10px;
+}
+
+/* Sidebar content */
+.content {
+    background-color: rgba(74, 82, 82, 0.13);
+    padding: 20px;
+    margin: 10px;
+    border: solid white;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width for smaller screens */
+    max-width: 300px; /* Prevents overflow */
+    border-radius: 20px;
+}
+
+.sitelinks li, .myworks li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.sitelinks li:hover, .myworks li:hover {
+    transition: font-size 0.3s ease, color 0.3s ease;
+    color: green;
+    font-size: 20px;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Image and caption styles */
+
+
+.caption {
+    margin-top: 10px; /* Adds some space above the caption */
+    font-size: 16px; /* Adjusts the font size as needed */
+    color: #fff8f8; /* Sets the text color (change as desired) */
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .content {
+        width: 90vw; /* Adjust sidebar width for tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        width: 95vw; /* Full width for mobile */
+    }
+
+    .flexcontainer {
+        flex-direction: column; /* Stack images vertically on mobile */
+        align-items: center;
+    }
+}
+
+/* Hover effects */
+.flex-box1, .flex-box2, .flex-box3, .flex-box4 {
+    width: 270px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: rgba(194, 189, 189, 0.822);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.flex-box1:hover, .flex-box2:hover, .flex-box3:hover, .flex-box4:hover {
+    transform: scale(1.1); /* Scale effect */
+    background-color: rgba(254, 255, 254, 0.774); /* Opaque color on hover */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(0, 204, 0);
+}
+
+img{
+    width: 100%; 
+    height: auto; 
+    max-height: 200px; 
+    border-radius: 20px;
+   
+}
+
+video{
+    width: 100%; 
+    height: auto; 
+    max-height: 200px; 
+    border-radius: 20px;
+}
+
+p, li, a, h1, h2{
+    color: white;
+}
+
+.social-links{
+
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+
+}
+
+li{
+
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.skills{
+    align-items: center;
+}
+
+
+
